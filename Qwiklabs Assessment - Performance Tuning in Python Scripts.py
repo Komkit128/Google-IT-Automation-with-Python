@@ -10,14 +10,11 @@ if __name__ == "__main__":
   # Start each task within the pool
   p.map(run, tasks)
 
-
-
 #!/usr/bin/env python
 import subprocess
 src = "/home/student-00-1b4b0180a349/data/prod/" # replace <source-path> with the source directory
 dest = "/home/student-00-1b4b0180a349/data/prod_backup/" # replace <destination-path> with the destination directory
 subprocess.call(["rsync", "-arq", src, dest])
-
 
 #!/usr/bin/env python
 import subprocess
